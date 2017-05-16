@@ -16,13 +16,41 @@
 Отредактируйте файл `config.yml` (пример содержания в файле `config-example.yml`) 
 Вы можете комбинировать стратегии торгов, аккаунты, пары и многое другое.
 
+```
+witness_url: "wss://node.market.rudex.org"
+prefix: "BTS"
+safe_mode: True
+account: "v0id"
+wif: "5*************************************************"
+
+market_separator: ":"
+
+reserves:
+ BTS: 1000
+ RUBLE: 200
+
+bots:
+    MakerWallBitAssets:
+        module: "stakemachine.strategies.maker"
+        bot: "MakerSellBuyWalls"
+        markets:
+            - "RUBLE:BTS"
+        target_price: "last"
+        target_price_offset_percentage: 1
+        spread_percentage: 5
+        volume_percentage: 50
+        symmetric_sides: True
+        only_buy: False
+        only_sell: False
+```
+
 ## ⌨️ Команды 
 * `stakemachine run` Запуск
 * `stakemachine once` Единичный запуск
 * `stakemachine cancel_all` Отмена ордеров и остановка работы
 
-** ☣️ Warning**: This is highly experimental code! Use at your OWN risk!
-** ☣️ Внимание**: Это экспериментальный код! Автор не несет ответсвенности за неправильное использование!
+☣️ **Warning**: This is highly experimental code! Use at your OWN risk!
+☣️ **Внимание**: Это экспериментальный код! Автор не несет ответсвенности за неправильное использование!
 
 # 📃 IMPORTANT NOTE
 
