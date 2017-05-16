@@ -1,27 +1,28 @@
 # StakeMachine
+### Торговый бот для децентрализованной биржи [RuDEX](https://market.rudex.org)
 
-Trading Bot Infrastructure for the BitShares Decentralized Exchange
-(DEX).
 
-**Warning**: This is highly experimental code! Use at your OWN risk!
 
-## Installation
 
-    git clone https://github.com/xeroc/stakemachine
+## Установка
+
+    git clone https://github.com/vikxx/stakemachine
     cd stakemachine
     python3 setup.py install
-    # or
-    python3 setup.py install --user
+    
 
-## Configuration
+## Конфигурация
 
-Configuration happens in `config.yml`
+Отредактируйте файл `config.yml` (пример содержания в файле `config-example.yml`) 
+Вы можете комбинировать стратегии торгов, аккаунты, пары и многое другое.
 
-## Execution
+## Команды 
+* `stakemachine run` Запуск
+* `stakemachine once` Единичный запуск
+* `stakemachine cancel_all` Отмена ордеров и остановка работы
 
-* `stakemachine run`
-* `stakemachine once`
-* `stakemachine cancel_all`
+**Warning**: This is highly experimental code! Use at your OWN risk!
+**Внимание**: Это экспериментальный код! Автор не несет ответсвенности за неправильное использование!
 
 # IMPORTANT NOTE
 
