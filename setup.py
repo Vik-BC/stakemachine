@@ -29,7 +29,7 @@ setup(name='stakemachine',
               'stakemachine = stakemachine.__main__:main',
           ],
       },
-      install_requires=["graphenelib==0.5.2",
+      install_requires=["graphenelib==0.4.4",
                         "pyyaml",
                         "pycrypto",
                         "autobahn"
